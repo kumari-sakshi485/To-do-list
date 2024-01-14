@@ -1,0 +1,147 @@
+body {
+  background-color: #17181f;
+  color: #ddd;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 400px;
+  margin: 20px auto;
+
+}
+
+form {
+  border: 3px solid #30313D;
+  border-radius: 18px;
+  padding: 5px;
+  display: flex;
+}
+
+form input[type="text"] {
+  background: none;
+  border: 0;
+  margin-left: 5px;
+  padding: 0 8px;
+  display: block;
+  width: 100%;
+  color: #fff;
+}
+
+form button {
+  background-color: #60DAFC;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+div.task {
+  background-color: #30313D;
+  border-radius: 10px;
+  padding: 5px 9px;
+  margin-top: 5px;
+  display: flex;
+  transition: opacity .3s linear;
+}
+
+div.task svg {
+  height: 20px;
+  margin-right: 6px;
+
+  fill: rgb(30, 204, 204);
+}
+
+div.task.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+div.task-name,
+div.task form {
+  flex-grow: 1;
+}
+
+div.task span {
+  position: relative;
+
+}
+
+div.task span::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1PX;
+  position: absolute;
+  background-color: #ddd;
+  top: 10px;
+  transition: width .1s linear;
+
+}
+
+div.task done span::before {
+  width: 100%;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+div.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+div.task input {
+  border: 2px solid #555;
+  border-radius: 5px;
+  padding: 2px 4px;
+}
+
+div.task button {
+  background-color: #17181f;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+div.task button:hover {
+  background-color: #17181f;
+}
+
+div.task button.delete-button {
+  background-color: #17181f;
+  background: none;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: opacity .3s linear;
+}
+
+div.task button.delete-button:hover {
+  background-color: #17181f;
+
+}
+
+
+
+
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.creation-date {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-left: 10px;
+}
